@@ -1,6 +1,6 @@
 {
   "name": "haptix",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "macos touchpad haptics",
   "main": "index.node",
   "types": "index.d.ts",
