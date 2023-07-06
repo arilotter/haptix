@@ -1,5 +1,5 @@
 {
-  "name": "haptix-darwin-x64",
+  "name": "@haptix/core-darwin-x64",
   "version": "0.2.1",
   "os": [
     "darwin"
@@ -7,12 +7,13 @@
   "cpu": [
     "x64"
   ],
-  "main": "haptix.darwin-x64.node",
+  "main": "core.darwin-x64.node",
   "files": [
-    "haptix.darwin-x64.node"
+    "core.darwin-x64.node"
   ],
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "repository": "https://github.com/arilotter/haptix"
 }

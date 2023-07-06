@@ -1,3 +1,3 @@
-# `haptix-darwin-arm64`
+# `@haptix/core-darwin-arm64`
 
-This is the **aarch64-apple-darwin** binary for `haptix`
+This is the **aarch64-apple-darwin** binary for `@haptix/core`

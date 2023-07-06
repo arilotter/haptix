@@ -19,9 +19,9 @@ $ yarn install haptix
 There's only one method!
 
 ```js
-const { perform, PerformanceTime, FeedbackPattern } = require("haptix");
+const { perform, PerformanceTime, FeedbackPattern } = require("@haptix/core");
 // or
-import { perform, PerformanceTime, FeedbackPattern } from "haptix";
+import { perform, PerformanceTime, FeedbackPattern } from "@haptix/core";
 
 perform(FeedbackPattern.Generic, PerformanceTime.Now);
 ```

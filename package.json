@@ -1,10 +1,10 @@
 {
-  "name": "haptix",
+  "name": "@haptix/core",
   "version": "0.2.1",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
-    "name": "haptix",
+    "name": "core",
     "triples": {
       "defaults": false,
       "additional": [
@@ -34,5 +34,6 @@
     "universal": "napi universal",
     "version": "napi version"
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@3.6.1",
+  "repository": "https://github.com/arilotter/haptix"
 }

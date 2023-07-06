@@ -1,15 +1,16 @@
 {
-  "name": "haptix-darwin-universal",
+  "name": "@haptix/core-darwin-universal",
   "version": "0.2.1",
   "os": [
     "darwin"
   ],
-  "main": "haptix.darwin-universal.node",
+  "main": "core.darwin-universal.node",
   "files": [
-    "haptix.darwin-universal.node"
+    "core.darwin-universal.node"
   ],
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "repository": "https://github.com/arilotter/haptix"
 }
