@@ -1,16 +1,16 @@
 {
   "name": "haptix",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "macos touchpad haptics",
   "main": "index.node",
   "types": "index.d.ts",
   "scripts": {
     "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
-    "build-debug": "pnpm run build",
-    "build-release": "pnpm run build --release",
-    "install": "pnpm run build-release",
+    "build-debug": "npm run build",
+    "build-release": "npm run build --release",
+    "install": "npm run build-release",
     "test": "cargo test",
-    "npm-test": "pnpm i && node test.js"
+    "npm-test": "node test.js"
   },
   "author": "Ari Lotter",
   "license": "MIT",
