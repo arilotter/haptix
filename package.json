@@ -1,0 +1,37 @@
+{
+  "name": "haptix",
+  "version": "0.1.0",
+  "description": "macos touchpad haptics",
+  "main": "index.node",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+    "build-debug": "pnpm run build",
+    "build-release": "pnpm run build --release",
+    "install": "pnpm run build-release",
+    "test": "cargo test",
+    "npm-test": "pnpm i && node test.js"
+  },
+  "author": "Ari Lotter",
+  "license": "MIT",
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arilotter/haptix.git"
+  },
+  "keywords": [
+    "vibration",
+    "haptic",
+    "haptics",
+    "macos",
+    "touchpad",
+    "force",
+    "touch"
+  ],
+  "bugs": {
+    "url": "https://github.com/arilotter/haptix/issues"
+  },
+  "homepage": "https://github.com/arilotter/haptix#readme"
+}

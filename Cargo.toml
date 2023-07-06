@@ -1,0 +1,21 @@
+[package]
+name = "haptix"
+version = "0.1.0"
+description = "macos touchpad haptics"
+authors = ["Ari Lotter"]
+license = "MIT"
+edition = "2018"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cacao = { path = "./cacao" }
+
+[dependencies.neon]
+version = "0.10"
+default-features = false
+features = ["napi-6"]
