@@ -1,0 +1,15 @@
+{
+  "name": "haptix-darwin-universal",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "main": "haptix.darwin-universal.node",
+  "files": [
+    "haptix.darwin-universal.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}

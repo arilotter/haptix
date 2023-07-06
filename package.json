@@ -1,37 +1,38 @@
 {
   "name": "haptix",
-  "version": "0.1.2",
-  "description": "macos touchpad haptics",
-  "main": "index.node",
+  "version": "0.2.0",
+  "main": "index.js",
   "types": "index.d.ts",
-  "scripts": {
-    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
-    "build-debug": "npm run build",
-    "build-release": "npm run build --release",
-    "install": "npm run build-release",
-    "test": "cargo test",
-    "npm-test": "node test.js"
+  "napi": {
+    "name": "haptix",
+    "triples": {
+      "defaults": false,
+      "additional": [
+        "aarch64-apple-darwin",
+        "x86_64-apple-darwin",
+        "universal-apple-darwin"
+      ]
+    }
   },
-  "author": "Ari Lotter",
   "license": "MIT",
   "devDependencies": {
-    "cargo-cp-artifact": "^0.1"
+    "@napi-rs/cli": "^2.16.1",
+    "ava": "^5.1.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arilotter/haptix.git"
+  "ava": {
+    "timeout": "3m"
   },
-  "keywords": [
-    "vibration",
-    "haptic",
-    "haptics",
-    "macos",
-    "touchpad",
-    "force",
-    "touch"
-  ],
-  "bugs": {
-    "url": "https://github.com/arilotter/haptix/issues"
+  "engines": {
+    "node": ">= 10"
   },
-  "homepage": "https://github.com/arilotter/haptix#readme"
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "ava",
+    "universal": "napi universal",
+    "version": "napi version"
+  },
+  "packageManager": "yarn@3.6.1"
 }
