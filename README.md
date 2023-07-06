@@ -14,6 +14,17 @@ $ pnpm install haptix
 $ yarn install haptix
 ```
 
+## How do I use it?
+
+There's only one function!
+
+```js
+const { perform, PerformanceTime, FeedbackPattern } = require("haptix");
+perform(FeedbackPattern.Generic, PerformanceTime.Now);
+```
+
+Note that nothing will happen unless you're touching the touchpad.
+
 ## Building haptix from source locally
 
 After cloning this repo, simply run
@@ -24,26 +35,15 @@ $ pnpm run build
 
 This command uses the [cargo-cp-artifact](https://github.com/neon-bindings/cargo-cp-artifact) utility to run the Rust build and copy the built library into `./index.node`.
 
-## Exploring haptix
-
-There's only one function!
-
-```js
-const { perform, PerformanceTime, FeedbackPattern } = require(".");
-perform(FeedbackPattern.Generic, PerformanceTime.Now);
-```
-
-Note that nothing will happen unless you're touching the touchpad.
-
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
-### `pnpm install`
+#### `pnpm install`
 
 Installs the project, including running `pnpm run build`.
 
-### `pnpm build`
+#### `pnpm build`
 
 Builds the Node addon (`index.node`) from source.
 
