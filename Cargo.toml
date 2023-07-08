@@ -7,10 +7,12 @@ version = "0.0.0"
 crate-type = ["cdylib"]
 
 [dependencies]
+io-kit = { git = "https://github.com/arilotter/io-kit-rs", rev = "7b299211ee93cc48cf9cdbbc40d2ec55a7445acc" }
 cacao = { git = "https://github.com/arilotter/cacao" }
 # Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
 napi = { version = "2.12.2", default-features = false, features = ["napi4"] }
 napi-derive = "2.12.2"
+objc-foundation = "0.1.1"
 
 [build-dependencies]
 napi-build = "2.0.1"

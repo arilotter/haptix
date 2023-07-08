@@ -28,6 +28,29 @@ perform(FeedbackPattern.Generic, PerformanceTime.Now);
 
 Note that nothing will happen unless you're touching the touchpad.
 
+## Internal API? :D
+
+There's an internal reverse-engineered API that's undocumented and may cause your app to be rejected from the Mac App Store.
+It's WAY stronger vibration, and it will work without the user touching the trackpad.
+
+```js
+import { Actuation, internalApiPerform } from "./index.js";
+
+internalApiPerform(Actuation.Strong);
+```
+
+### Internal-er API? :D
+
+Sure ok here is an unsafe Rust function that calls an undocumented FFI API with unknown parameters.
+This is likely to segfault :)
+
+```js
+import { internalApiPerform } from "./index.js";
+
+// unsafeInternalApiPerform(actuation: integer number, unknown1: integer number, unknown2: floating point number, unknown3: floating point number): void
+unsafeInternalApiPerform(6, 0, 0.0, 0.0);
+```
+
 ## Building haptix from source locally
 
 After cloning this repo, simply run

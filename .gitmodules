@@ -1,3 +1,6 @@
 [submodule "cacao"]
 	path = cacao
 	url = https://github.com/arilotter/cacao
+[submodule "io-kit"]
+	path = io-kit
+	url = https://github.com/arilotter/io-kit-rs
