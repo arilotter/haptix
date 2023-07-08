@@ -252,8 +252,11 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { perform, PerformanceTime, FeedbackPattern } = nativeBinding
+const { internalApiPerform, unsafeInternalApiPerform, Actuation, perform, PerformanceTime, FeedbackPattern } = nativeBinding
 
+module.exports.internalApiPerform = internalApiPerform
+module.exports.unsafeInternalApiPerform = unsafeInternalApiPerform
+module.exports.Actuation = Actuation
 module.exports.perform = perform
 module.exports.PerformanceTime = PerformanceTime
 module.exports.FeedbackPattern = FeedbackPattern
